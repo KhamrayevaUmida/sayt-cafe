@@ -5,74 +5,167 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Fast Food</title>
+    <title>Document</title>
     <style>
         body {
-    margin: 0;
-}
-.menu{
-    display: flex;
-    width: 100%;
-    background-color: #bbb;
-    padding-right: 20px;
-}
-.img{
-    width: 10%;
-}
-ul {
-    width: 180px; /* Ширина меню */
-    list-style: none; /* Для списка убираем маркеры */
-    margin: 0; /* Нет отступов вокруг */
-    padding: 0; /* Убираем поля вокруг текста */
-    font-family: Arial, sans-serif; /* Рубленый шрифт для текста меню */
-    font-size: 15px; /* Размер названий в пункте меню */
-    align-items: center;
-}
-ul img{
-    width: 70px;
-}
-.major{
-    background-color: #bbb; 
-    color: #ffe;
-}
-li {
-    width: 12.5%;
-    border-bottom: 1px solid #ccc; /* Линия снизу */
-    text-align: center;
-    align-items: center;
-}
-li ul {
-    position: absolute; /* Подменю позиционируются абсолютно */
-    display: none; /* Скрываем подменю */
-    margin-left: 50px; /* Сдвигаем подменю вправо */
-    margin-top: 0em; /* Сдвигаем подменю вверх */
-}
-.item{
-    width: 200px;
-}
-li a {
-    display: block; /* Ссылка как блочный элемент */ /* Поля вокруг надписи */
-    text-decoration: none; /* Подчеркивание у ссылок убираем */
-    color: #666; /* Цвет текста */
-    border: 1px solid #ccc;/* Рамка вокруг пунктов меню */
-    background-color: #f0f0f0; /* Цвет фона */
-    border-bottom: none; /* Границу снизу не проводим */
-    border-radius: 5px;
-    height: 40px;
-    padding-top: 30px;
-}
-li a:hover {
-    color: #ffe; /* Цвет текста активного пункта */
-    background-color: #5488af; /* Цвет фона активного пункта */
-}
-li:hover ul { 
-    display: block; /* При выделении пункта курсором мыши отображается подменю */
-    width: 200px;
-}
-.brd {
-   
-}
-    </style>
+            margin: 0;
+        }
+        .menu{
+            display: flex;
+            width: 100%;
+            background-color: #F9A13D;
+            padding-right: 20px;
+        }
+        .img{
+            width: 10%;
+        }
+        ul {
+            width: 180px; /* Ширина меню */
+            list-style: none; /* Для списка убираем маркеры */
+            margin: 0; /* Нет отступов вокруг */
+            padding: 0; /* Убираем поля вокруг текста */
+            font-family: Arial, sans-serif; /* Рубленый шрифт для текста меню */
+            font-size: 30px; /* Размер названий в пункте меню */
+            align-items: center;
+            font-weight: bold;
+        }
+        ul img{
+            width: 100px;
+        }
+        .major{
+            background-color: #F9A13D; 
+            color: #ffe;
+        }
+        li {
+            width: 12.7%;
+            border-bottom: 1px solid #F9A13D; /* Линия снизу */
+            text-align: center;
+            align-items: center;
+        }
+        li ul {
+            position: absolute; /* Подменю позиционируются абсолютно */
+            display: none; /* Скрываем подменю */
+            margin-left: 50px; /* Сдвигаем подменю вправо */
+            margin-top: -10px; /* Сдвигаем подменю вверх */
+        }       
+        .item{
+            width: 200px;
+        }
+        li a {
+            display: block; /* Ссылка как блочный элемент */ /* Поля вокруг надписи */
+            text-decoration: none; /* Подчеркивание у ссылок убираем */
+            color: #666; /* Цвет текста */
+            border: 1px solid #F9A13D;/* Рамка вокруг пунктов меню */
+            background-color: #f5cf9e; /* Цвет фона */
+            border-bottom: none; /* Границу снизу не проводим */
+            border-radius: 5px;
+            height: 75px;
+            padding-top: 35px;
+        }
+        li a:hover {
+            color: #ffe; /* Цвет текста активного пункта */
+            background-color: #5488af; /* Цвет фона активного пункта */
+        }
+        li:hover ul { 
+            display: block; /* При выделении пункта курсором мыши отображается подменю */
+            width: 200px;
+        }
+
+        .container{
+            background-image: url(https://kartinkin.net/pics/uploads/posts/2022-08/1659766649_1-kartinkin-net-p-fon-kafe-krasivo-1.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            width: 100%;
+            height: 150px;
+            text-align: center;
+            align-items: center;
+            color: #fff;
+            font-size: 35px;
+            font-family:'Times New Roman', Times, serif;
+            text-shadow: 10px 5px 5px #F9A13D;
+            font-weight: bold;
+            margin: 0;
+            padding-top: 5px;
+        }
+        .navbar{
+            height: 450px;
+        }
+        .navbar, .navbar_blog{
+            width: 100%;
+            display: flex;
+            background-image: url(https://kartinkin.net/uploads/posts/2021-07/1627171305_12-kartinkin-com-p-bar-razmitii-fon-krasivo-13.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            text-align: center;
+            margin: 0;
+        }
+        .navbar_blog{
+            height: 530px;
+        }
+        .blog{
+            width: 49%;
+            margin: 5px;
+            overflow: hidden;
+            height: 520px;
+        }
+        .blog img{
+            width: 100%;
+            transition: 0.5s;
+        }
+        .info{
+            font-weight: bold;
+            text-align: center;
+            background-color: rgb(52, 12, 12);
+            color: #fff;
+            width: 100%;
+            height: 130px;
+            margin-top: -7px;
+            padding-top: 5px;
+            font-size: 25px;
+        }
+        .blog img:hover{
+            transform: scale(1.2);
+        }
+       .end{
+            width: 100%;
+            height: 430px;
+            background-color: rgb(52, 12, 12);
+            display: flex;
+            text-align: center;
+            color: #fff;
+        }
+        .side_bar{
+            width: 24%;
+            white-space: pre-line;
+        }
+        .side_bar img{
+            width: 80%;
+        }
+        .side_bar h2{
+            color: #fff;
+            font-size: 60px;
+            padding-top: 50px; 
+        }
+        .side_bar h3{
+            font-size: 23px;
+        }
+        .ikonka{
+            width: 100%;
+            display: flex;
+            margin-left: 100px;
+        }
+        .ikonka img{
+            width: 60px;
+            margin-right: 10px;
+        }
+        .side_bar a{
+            color: #fff;
+            text-decoration: none;
+        }
+        .ikonka p{
+            font-size: 20px;
+        }
+</style>
 </head>
 <body>
     <ul class="menu">
@@ -112,12 +205,14 @@ li:hover ul {
                 <li><a href="#" class="item">Fanta</a></li> 
             </ul> 
         </li> 
-        <li><a href="/help/" class="brd">Помощь</a>
+        <li><a href="/help/">Помощь</a>
             <ul> 
                 <li><a href="#" class="item">Call Center</a></li> 
                 <li><a href="#" class="item">Telegram</a></li> 
                 <li><a href="#" class="item">Instagram</a></li> 
-                <li><a href="#" class="item">Facebook</a></li> 
+                <li><a href="#" class="item">Facebook</a></li>
+                <li><a href="#" class="item">Twitter</a></li> 
+
             </ul>
         </li> 
         <li><a href="/order/">Заказ</a> 
@@ -126,5 +221,70 @@ li:hover ul {
             </ul> 
         </li>
        </ul>
+       <div class="container">
+            <h1>UNO CAFE BISTRO</h1>
+       </div>
+       <div class="navbar">
+
+       </div>
+       <div class="info">
+        <h1>ФОТО UNO CAFE BISTRO</h1>
+    </div>
+    <div class="navbar_blog">
+        <div class="blog">
+            <img src="https://img.restoclub.ru/uploads/place/4/a/f/0/4af043b1a1ecebaa756355337787ceae_w1200_h630.jpg" alt="">
+        </div>
+        <div class="blog">
+            <img src="https://www.afisha.uz/uploads/media/2019/05/0559080.jpeg" alt="">
+        </div>
+    </div>
+    <div class="navbar_blog">
+        <div class="blog">
+            <img src="https://gcdn.tomesto.ru/img/place/000/023/792/restoran-uno-cafe-na-novovestinskoy-ulitse_80bae_full-242249.jpg" alt="">
+        </div>
+        <div class="blog">
+            <img src="https://media-cdn.tripadvisor.com/media/photo-s/0e/ee/ec/56/ta-img-20170411-130450.jpg" alt="">
+        </div>
+    </div>
+        <div class="end">
+            <div class="side_bar logo_img">
+                <img src="https://unobistro.weebly.com/uploads/4/8/3/6/48367591/img-20201205-wa0005-modified.png" alt="">
+            </div>
+            <div class="side_bar">
+                <h2>UNO CAFE 
+                    BISTRO</h2>
+            </div>
+            <div class="side_bar">
+                <h3>Наслаждайдесь вместе с нами
+                    Ресторан «Uno Cafe» расположен в одном из красивейших пригородов Санкт-Петербурга — в Павловске, около входа в Павловский парк. 
+                    Рядом находится исторический павильон «Молочная Ферма» работы архитекторов А.Воронихина и К.Росси.
+                    В Uno cafe вы можете отпраздновать свадьбу, юбилей и иное торжественное событие в уютной, домашней атмосфере.
+                    В ресторане два зала на 80 и 100 мест, где комфортно разместятся гости и сохранится зона для танцев и работы ведущего.
+                </h3>
+            </div>
+            <div class="side_bar">
+                <a href="#" class="ikonka">
+                    <img src="http://s1.iconbird.com/ico/2013/9/446/w512h5121380376664MetroUIPhoneAlt.png" alt="">
+                    <p>+998(9X) xxx-xx-xx</p>
+                </a>
+                <a href="t.me/Uno_bistro_cafe" class="ikonka">
+                    <img src="https://w7.pngwing.com/pngs/402/10/png-transparent-telegram-logo-scalable-graphics-icon-logo-blue-angle-triangle.png" alt="">
+                    <p>@Uno_bistro_cafe</p>
+                </a>
+                <a href="#" class="ikonka">
+                    <img src="https://pngicon.ru/file/uploads/instagram.png" alt="">
+                    <p>@Uno_bistro_cafe</p>
+                </a>
+                <a href="#" class="ikonka">
+                    <img src="https://cdn-icons-png.flaticon.com/512/145/145802.png" alt="">
+                    <p>@Uno_bistro_cafe</p>
+                </a>
+                <a href="" class="ikonka">
+                    <img src="https://cdn-icons-png.flaticon.com/512/145/145812.png" alt="">
+                    <p>@Uno_bistro_cafe</p>
+                </a>
+            </div>
+        </div>
+        
 </body>
 </html>
