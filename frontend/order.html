@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Fast Food</title>
+    <style>
+        body {
+    margin: 0;
+}
+.menu{
+    display: flex;
+    width: 100%;
+    background-color: #bbb;
+    padding-right: 20px;
+}
+.img{
+    width: 10%;
+}
+ul {
+    width: 180px; /* Ширина меню */
+    list-style: none; /* Для списка убираем маркеры */
+    margin: 0; /* Нет отступов вокруг */
+    padding: 0; /* Убираем поля вокруг текста */
+    font-family: Arial, sans-serif; /* Рубленый шрифт для текста меню */
+    font-size: 15px; /* Размер названий в пункте меню */
+    align-items: center;
+}
+ul img{
+    width: 70px;
+}
+.major{
+    background-color: #bbb; 
+    color: #ffe;
+}
+li {
+    width: 12.5%;
+    border-bottom: 1px solid #ccc; /* Линия снизу */
+    text-align: center;
+    align-items: center;
+}
+li ul {
+    position: absolute; /* Подменю позиционируются абсолютно */
+    display: none; /* Скрываем подменю */
+    margin-left: 50px; /* Сдвигаем подменю вправо */
+    margin-top: 0em; /* Сдвигаем подменю вверх */
+}
+.item{
+    width: 200px;
+}
+li a {
+    display: block; /* Ссылка как блочный элемент */ /* Поля вокруг надписи */
+    text-decoration: none; /* Подчеркивание у ссылок убираем */
+    color: #666; /* Цвет текста */
+    border: 1px solid #ccc;/* Рамка вокруг пунктов меню */
+    background-color: #f0f0f0; /* Цвет фона */
+    border-bottom: none; /* Границу снизу не проводим */
+    border-radius: 5px;
+    height: 40px;
+    padding-top: 30px;
+}
+li a:hover {
+    color: #ffe; /* Цвет текста активного пункта */
+    background-color: #5488af; /* Цвет фона активного пункта */
+}
+li:hover ul { 
+    display: block; /* При выделении пункта курсором мыши отображается подменю */
+    width: 200px;
+}
+.brd {
+   
+}
+    </style>
+</head>
+<body>
+    <ul class="menu">
+        <li class="img">
+            <img src="https://unobistro.weebly.com/uploads/4/8/3/6/48367591/img-20201205-wa0005-modified.png" alt="">
+        </li>
+        <li><a href="/">Главная</a></li> 
+        <li><a href="fast_food/">FAST-FOOD</a>
+            <ul> 
+                <li><a href="#" class="item">Lavash</a></li> 
+                <li><a href="#" class="item">Hotdog</a></li> 
+                <li><a href="#" class="item">Pita</a></li> 
+                <li><a href="#" class="item">Шашлык</a></li> 
+            </ul> 
+        </li> 
+        <li><a href="pizza/">PIZZA</a>
+            <ul> 
+                <li><a href="#" class="item">Favorite pizza</a></li> 
+                <li><a href="#" class="item">Marinara pizza</a></li> 
+                <li><a href="#" class="item">Best pizza</a></li> 
+                <li><a href="#" class="item">Classik pizza</a></li> 
+            </ul> 
+        </li> 
+        <li><a href="coffee/">COFFEE</a> 
+            <ul> 
+                <li><a href="#" class="item">Cappuccino</a></li> 
+                <li><a href="#" class="item">Latte</a></li> 
+                <li><a href="#" class="item">Amerikano</a></li> 
+                <li><a href="#" class="item">Expresso</a></li> 
+            </ul> 
+        </li>
+        <li><a href="drink/">DRINK</a> 
+            <ul> 
+                <li><a href="#" class="item">Pepsi</a></li> 
+                <li><a href="#" class="item">Coca-cola</a></li> 
+                <li><a href="#" class="item">Sprite</a></li> 
+                <li><a href="#" class="item">Fanta</a></li> 
+            </ul> 
+        </li> 
+        <li><a href="help/">Помощь</a>
+            <ul> 
+                <li><a href="#" class="item">Call Center</a></li> 
+                <li><a href="#" class="item">Telegram</a></li> 
+                <li><a href="#" class="item">Instagram</a></li> 
+                <li><a href="#" class="item">Facebook</a></li> 
+            </ul>
+        </li> 
+        <li><a href="order/" class="major">Заказ</a> 
+            <ul> 
+                <li><a href="#" class="item">Telephone number</a></li> 
+            </ul> 
+        </li>
+       </ul>
+</body>
+</html>
