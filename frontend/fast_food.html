@@ -20,17 +20,18 @@
             width: 10%;
         }
         ul {
-            width: 180px; /* Ширина меню */
-            list-style: none; /* Для списка убираем маркеры */
-            margin: 0; /* Нет отступов вокруг */
-            padding: 0; /* Убираем поля вокруг текста */
-            font-family: Arial, sans-serif; /* Рубленый шрифт для текста меню */
-            font-size: 30px; /* Размер названий в пункте меню */
+            width: 180px; 
+            list-style: none; 
+            margin: 0; 
+            padding: 0; 
+            font-family: Arial, sans-serif; 
+            font-size: 30px; 
             align-items: center;
             font-weight: bold;
         }
         ul img{
             width: 100px;
+            margin-top: 10px;
         }
         .major{
             background-color: #F9A13D; 
@@ -38,36 +39,36 @@
         }
         li {
             width: 12.7%;
-            border-bottom: 1px solid #F9A13D; /* Линия снизу */
+            border-bottom: 1px solid #F9A13D; 
             text-align: center;
             align-items: center;
         }
         li ul {
-            position: absolute; /* Подменю позиционируются абсолютно */
-            display: none; /* Скрываем подменю */
-            margin-left: 50px; /* Сдвигаем подменю вправо */
-            margin-top: -10px; /* Сдвигаем подменю вверх */
+            position: absolute; 
+            display: none; 
+            margin-left: 50px; 
+            margin-top: -10px; 
         }       
         .item{
             width: 200px;
         }
         li a {
-            display: block; /* Ссылка как блочный элемент */ /* Поля вокруг надписи */
-            text-decoration: none; /* Подчеркивание у ссылок убираем */
-            color: #666; /* Цвет текста */
-            border: 1px solid #F9A13D;/* Рамка вокруг пунктов меню */
-            background-color: #f5cf9e; /* Цвет фона */
-            border-bottom: none; /* Границу снизу не проводим */
+            display: block;
+            text-decoration: none; 
+            color: #666;
+            border: 1px solid #F9A13D;
+            background-color: #f5cf9e; 
+            border-bottom: none;
             border-radius: 5px;
             height: 75px;
             padding-top: 35px;
         }
         li a:hover {
-            color: #ffe; /* Цвет текста активного пункта */
-            background-color: #5488af; /* Цвет фона активного пункта */
+            color: #ffe; 
+            background-color: rgb(52, 12, 12); 
         }
         li:hover ul { 
-            display: block; /* При выделении пункта курсором мыши отображается подменю */
+            display: block; 
             width: 200px;
         }
 
@@ -86,9 +87,6 @@
             font-weight: bold;
             margin: 0;
             padding-top: 5px;
-        }
-        .navbar{
-            height: 450px;
         }
         .navbar, .navbar_blog{
             width: 100%;
@@ -120,11 +118,38 @@
             width: 100%;
             height: 130px;
             margin-top: -7px;
-            padding-top: 5px;
+            padding-top: 1px;
             font-size: 25px;
+        }
+        .info h1{
+            text-shadow: 7px 5px 10px #F9A13D;
+            font-size: 60px;
+            margin-top: 25px;
         }
         .blog img:hover{
             transform: scale(1.2);
+        }
+        .navbar{
+            width: 100%;
+            height: 500px;
+        }
+        .nav{
+            width: 33%;
+            overflow: hidden;
+            margin: 5px;
+            background-color: #F9A13D;
+        }
+        .nav img{
+            width: 100%;
+            transition: 0.5s
+        }
+        .nav a{
+            color: #fff;
+            text-decoration: none;
+            font-size: 25px;
+        }
+        .nav img:hover{
+            transform: scale(1.1);
         }
        .end{
             width: 100%;
@@ -220,32 +245,81 @@
                 <li><a href="#" class="item">Telephone number</a></li> 
             </ul> 
         </li>
-       </ul>
-       <div class="container">
+    </ul>
+        <div class="container">
             <h1>UNO CAFE BISTRO</h1>
-       </div>
-       <div class="navbar">
-
-       </div>
-       <div class="info">
-        <h1>ФОТО UNO CAFE BISTRO</h1>
-    </div>
-    <div class="navbar_blog">
-        <div class="blog">
-            <img src="https://img.restoclub.ru/uploads/place/4/a/f/0/4af043b1a1ecebaa756355337787ceae_w1200_h630.jpg" alt="">
         </div>
-        <div class="blog">
-            <img src="https://www.afisha.uz/uploads/media/2019/05/0559080.jpeg" alt="">
+        <div class="navbar_blog">
+            <div class="blog">
+                <img src="https://img.restoclub.ru/uploads/place/4/a/f/0/4af043b1a1ecebaa756355337787ceae_w1200_h630.jpg" alt="">
+            </div>
+            <div class="blog">
+                <img src="https://www.afisha.uz/uploads/media/2019/05/0559080.jpeg" alt="">
+            </div>
         </div>
-    </div>
-    <div class="navbar_blog">
-        <div class="blog">
-            <img src="https://gcdn.tomesto.ru/img/place/000/023/792/restoran-uno-cafe-na-novovestinskoy-ulitse_80bae_full-242249.jpg" alt="">
+        <div class="info">
+            <h1>FAST FOOD</h1>
         </div>
-        <div class="blog">
-            <img src="https://media-cdn.tripadvisor.com/media/photo-s/0e/ee/ec/56/ta-img-20170411-130450.jpg" alt="">
+        <div class="navbar">
+            <div class="nav">
+                <a href="#">
+                    <h2>Lavash</h2>
+                    <img src="https://thumbs.dreamstime.com/b/shawarma-lavash-%D1%81-%D1%80%D0%B8%D1%81%D0%BE%D0%BC-%D0%B8-%D0%BE%D0%B2%D0%BE%D1%89%D0%B0%D0%BC%D0%B8-74294012.jpg" alt="">
+                </a>
+            </div>
+            <div class="nav">
+                <a href="#">
+                    <h2>Hot-Dog</h2>
+                    <img src="https://images.hola.com/imagenes/cocina/noticiaslibros/20200424166483/dia-mundial-perrito-caliente-hot-dog/0-815-493/hotdogs-m.jpg" alt="">
+                </a>
+            </div>
+            <div class="nav">
+                <a href="#">
+                    <h2>Sandwich</h2>
+                    <img src="https://cdn7.kiwilimon.com/recetaimagen/38989/50344.jpg" alt="">
+                </a>
+            </div>
         </div>
-    </div>
+        <div class="navbar">
+            <div class="nav">
+                <a href="#">
+                    <h2>Hamburger</h2>
+                    <img src="https://www.thespruceeats.com/thmb/ed2I1ndnNKkZ4khwdC351qvLtSM=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/slow-cooker-hamburgers-recipe-for-kids-2098104-hero-01-3dd9bf2b2ca748358047f2ff4e73b64c.jpg" alt="">
+                </a>
+            </div>
+            <div class="nav">
+                <a href="#">
+                    <h2>Chisburger</h2>
+                    <img src="https://www.foodandwine.com/thmb/DI29Houjc_ccAtFKly0BbVsusHc=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/crispy-comte-cheesburgers-FT-RECIPE0921-6166c6552b7148e8a8561f7765ddf20b.jpg" alt="">
+                </a>
+            </div>
+            <div class="nav">
+                <a href="#">
+                    <h2>Pancakes</h2>
+                    <img src="https://static.onecms.io/wp-content/uploads/sites/43/2022/02/16/21014-Good-old-Fashioned-Pancakes-mfs_001.jpg" alt="">
+                </a>
+            </div>
+        </div>
+        <div class="navbar">
+            <div class="nav">
+                <a href="#">
+                    <h2>Noodles</h2>
+                    <img src="https://avegtastefromatoz.com/wp-content/uploads/2022/01/Noodle-steps-FI.jpg" alt="">
+                </a>
+            </div>
+            <div class="nav">
+                <a href="#">
+                    <h2>Tried chicken</h2>
+                    <img src="https://tmbidigitalassetsazure.blob.core.windows.net/rms3-prod/attachments/37/1200x1200/Crispy-Fried-Chicken_EXPS_TOHJJ22_6445_DR%20_02_03_11b.jpg" alt="">
+                </a>
+            </div>
+            <div class="nav">
+                <a href="#">
+                    <h2>Free</h2>
+                    <img src="https://static.1000.menu/img/content-v2/29/44/11998/kartofel-fri-v-duxovke_1620886770_10_max.jpg" alt="">
+                </a>
+            </div>
+        </div>
         <div class="end">
             <div class="side_bar logo_img">
                 <img src="https://unobistro.weebly.com/uploads/4/8/3/6/48367591/img-20201205-wa0005-modified.png" alt="">
@@ -285,6 +359,5 @@
                 </a>
             </div>
         </div>
-        
 </body>
 </html>
