@@ -1,6 +1,2 @@
 # sayt-cafe
 sayt-cafe
-
-
-
-
