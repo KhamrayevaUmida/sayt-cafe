@@ -20,12 +20,12 @@
             width: 10%;
         }
         ul {
-            width: 180px; 
-            list-style: none; 
-            margin: 0; 
-            padding: 0; 
+            width: 180px;
+            list-style: none;
+            margin: 0;
+            padding: 0;
             font-family: Arial, sans-serif;
-            font-size: 30px; 
+            font-size: 30px;
             align-items: center;
             font-weight: bold;
         }
@@ -39,32 +39,32 @@
         }
         li {
             width: 12.7%;
-            border-bottom: 1px solid #F9A13D; 
+            border-bottom: 1px solid #F9A13D;
             text-align: center;
             align-items: center;
         }
         li ul {
-            position: absolute; 
-            display: none; 
-            margin-left: 50px; 
-            margin-top: -10px; 
+            position: absolute;
+            display: none;
+            margin-left: 50px;
+            margin-top: -10px;
         }       
         .item{
             width: 200px;
         }
         li a {
-            display: block; 
+            display: block;
             text-decoration: none; 
-            color: #666; 
+            color: #666;
             border: 1px solid #F9A13D;
-            background-color: #f5cf9e; 
+            background-color: #f5cf9e;
             border-bottom: none; 
             border-radius: 5px;
             height: 75px;
             padding-top: 35px;
         }
         li a:hover {
-            color: #ffe; 
+            color: #ffe;
             background-color: rgb(52, 12, 12); 
         }
         li:hover ul { 
@@ -89,7 +89,7 @@
             padding-top: 5px;
         }
         .navbar{
-            height: 450px;
+            height: 480px;
         }
         .navbar, .navbar_blog{
             width: 100%;
@@ -99,6 +99,26 @@
             background-size: cover;
             text-align: center;
             margin: 0;
+        }
+        .nav{
+            width: 25%;
+            background-color: rgb(52, 12, 12);
+            margin: 10px;
+            align-items: center;
+            overflow: hidden;
+        }
+        .nav a{
+            text-decoration: none;
+            color: #fff;
+            font-size: 30px;
+        }
+        .nav img{
+            width: 100%;
+            height: 330px;
+            transition: 0.5s;
+        }
+        .nav img:hover{
+            transform: scale(1.2);
         }
         .navbar_blog{
             height: 530px;
@@ -173,8 +193,8 @@
         <li class="img">
             <img src="https://unobistro.weebly.com/uploads/4/8/3/6/48367591/img-20201205-wa0005-modified.png" alt="">
         </li>
-        <li><a href="/">Главная</a></li> 
-        <li><a href="/fast_food/">FAST-FOOD</a>
+        <li><a href="/" class="major">Главная</a></li> 
+        <li><a href="/backend/fast_food/">FAST-FOOD</a>
             <ul> 
                 <li><a href="#" class="item">Lavash</a></li> 
                 <li><a href="#" class="item">Hotdog</a></li> 
@@ -182,7 +202,7 @@
                 <li><a href="#" class="item">Шашлык</a></li> 
             </ul> 
         </li> 
-        <li><a href="/pizza/">PIZZA</a>
+        <li><a href="backend/pizza/" class="brd">PIZZA</a>
             <ul> 
                 <li><a href="#" class="item">Favorite pizza</a></li> 
                 <li><a href="#" class="item">Marinara pizza</a></li> 
@@ -190,7 +210,7 @@
                 <li><a href="#" class="item">Classik pizza</a></li> 
             </ul> 
         </li> 
-        <li><a href="/coffee/" class="major">COFFEE</a> 
+        <li><a href="backend/coffee/">COFFEE</a> 
             <ul> 
                 <li><a href="#" class="item">Cappuccino</a></li> 
                 <li><a href="#" class="item">Latte</a></li> 
@@ -198,7 +218,7 @@
                 <li><a href="#" class="item">Expresso</a></li> 
             </ul> 
         </li>
-        <li><a href="/drink/">DRINK</a> 
+        <li><a href="backend/drink/">DRINK</a> 
             <ul> 
                 <li><a href="#" class="item">Pepsi</a></li> 
                 <li><a href="#" class="item">Coca-cola</a></li> 
@@ -206,7 +226,7 @@
                 <li><a href="#" class="item">Fanta</a></li> 
             </ul> 
         </li> 
-        <li><a href="/help/">Помощь</a>
+        <li><a href="backend/help/">Помощь</a>
             <ul> 
                 <li><a href="#" class="item">Call Center</a></li> 
                 <li><a href="#" class="item">Telegram</a></li> 
@@ -216,67 +236,107 @@
 
             </ul>
         </li> 
-        <li><a href="/order/">Заказ</a> 
+        <li><a href="backend/order/">Заказ</a> 
             <ul> 
                 <li><a href="#" class="item">Telephone number</a></li> 
             </ul> 
         </li>
-    </ul>
-    <div class="container">
-        <h1>UNO CAFE BISTRO</h1>
-    </div>
-    <div class="navbar_blog">
-        <div class="blog">
-            <img src="https://www.afisha.uz/uploads/media/2019/05/0559080.jpeg" alt="">
+       </ul>
+       <div class="container">
+            <h1>UNO CAFE BISTRO</h1>
+       </div>
+        <div class="navbar">
+            <div class="nav">
+                <a href="/backend/fast_food/">
+                    <h2>FAST FOOD</h2>
+                    <img src="https://excellentglobal.com.br/wp-content/uploads/2018/11/bloggif_5bfc3ae6945b8.jpeg" alt="">
+                </a>
+            </div>
+            <div class="nav">
+                <a href="/backend/pizza/">
+                    <h2>PIZZA</h2>
+                    <img src="https://s1.eda.ru/StaticContent/Photos/120131085053/171027192707/p_O.jpg" alt="">
+                </a>
+            </div>
+            <div class="nav">
+                <a href="/backend/coffee/">
+                    <h2>COFFEE</h2>
+                    <img src="https://www.coffeeaddress.com/file/manual/CA_Home_Coffee_in_cafe@2x.png" alt="">
+                </a>
+            </div>
+            <div class="nav">
+                <a href="/backend/drink">
+                    <h2>DRINK</h2>
+                    <img src="https://thebigmansworld.com/wp-content/uploads/2021/07/keto-drink-mix4-500x500.jpeg" alt="">
+                </a>
+            </div>
         </div>
-        <div class="blog">
-            <img src="https://media-cdn.tripadvisor.com/media/photo-s/0e/ee/ec/56/ta-img-20170411-130450.jpg" alt="">
+        <div class="info">
+            <h1>ФОТО UNO CAFE BISTRO</h1>
         </div>
-    </div>
-    <div class="info">
-        <h1>COFFEE</h1>
-    </div>
-    <div class="navbar">
-    
-    </div>
-    <div class="end">
-        <div class="side_bar logo_img">
-            <img src="https://unobistro.weebly.com/uploads/4/8/3/6/48367591/img-20201205-wa0005-modified.png" alt="">
+        <div class="navbar_blog">
+            <div class="blog">
+                <img src="https://img.restoclub.ru/uploads/place/4/a/f/0/4af043b1a1ecebaa756355337787ceae_w1200_h630.jpg" alt="">
+            </div>
+            <div class="blog">
+                <img src="https://www.afisha.uz/uploads/media/2019/05/0559080.jpeg" alt="">
+            </div>
         </div>
-        <div class="side_bar">
-            <h2>UNO CAFE 
-                BISTRO</h2>
+        <div class="navbar_blog">
+            <div class="blog">
+                <img src="https://gcdn.tomesto.ru/img/place/000/023/792/restoran-uno-cafe-na-novovestinskoy-ulitse_80bae_full-242249.jpg" alt="">
+            </div>
+            <div class="blog">
+                <img src="https://media-cdn.tripadvisor.com/media/photo-s/0e/ee/ec/56/ta-img-20170411-130450.jpg" alt="">
+            </div>
         </div>
-        <div class="side_bar">
-            <h3>Наслаждайдесь вместе с нами
+        <div class="navbar_blog">
+            <div class="blog">
+                <img src="https://www.afisha.uz/uploads/media/2019/05/0408215.jpeg" alt="">
+            </div>
+            <div class="blog">
+                <img src="https://broportal.net.ua/media/djcatalog2/images/item/1/uno-pizza-grill_f.jpg" alt="">
+            </div>
+        </div>
+        <div class="end">
+            <div class="side_bar logo_img">
+                <img src="https://unobistro.weebly.com/uploads/4/8/3/6/48367591/img-20201205-wa0005-modified.png" alt="">
+            </div>
+            <div class="side_bar">
+                <h2>UNO CAFE 
+                    BISTRO</h2>
+            </div>
+            <div class="side_bar">
+                <h3>Наслаждайдесь вместе с нами
                     Ресторан «Uno Cafe» расположен в одном из красивейших пригородов Санкт-Петербурга — в Павловске, около входа в Павловский парк. 
                     Рядом находится исторический павильон «Молочная Ферма» работы архитекторов А.Воронихина и К.Росси.
                     В Uno cafe вы можете отпраздновать свадьбу, юбилей и иное торжественное событие в уютной, домашней атмосфере.
                     В ресторане два зала на 80 и 100 мест, где комфортно разместятся гости и сохранится зона для танцев и работы ведущего.
-            </h3>
+                </h3>
+            </div>
+            <div class="side_bar">
+                <a href="#" class="ikonka">
+                    <img src="http://s1.iconbird.com/ico/2013/9/446/w512h5121380376664MetroUIPhoneAlt.png" alt="">
+                    <p>+998(9X) xxx-xx-xx</p>
+                </a>
+                <a href="t.me/Uno_bistro_cafe" class="ikonka">
+                    <img src="https://w7.pngwing.com/pngs/402/10/png-transparent-telegram-logo-scalable-graphics-icon-logo-blue-angle-triangle.png" alt="">
+                    <p>@Uno_bistro_cafe</p>
+                </a>
+                <a href="#" class="ikonka">
+                    <img src="https://pngicon.ru/file/uploads/instagram.png" alt="">
+                    <p>@Uno_bistro_cafe</p>
+                </a>
+                <a href="#" class="ikonka">
+                    <img src="https://cdn-icons-png.flaticon.com/512/145/145802.png" alt="">
+                    <p>@Uno_bistro_cafe</p>
+                </a>
+                <a href="" class="ikonka">
+                    <img src="https://cdn-icons-png.flaticon.com/512/145/145812.png" alt="">
+                    <p>@Uno_bistro_cafe</p>
+                </a>
+            </div>
         </div>
-        <div class="side_bar">
-            <a href="#" class="ikonka">
-                <img src="http://s1.iconbird.com/ico/2013/9/446/w512h5121380376664MetroUIPhoneAlt.png" alt="">
-                <p>+998(9X) xxx-xx-xx</p>
-            </a>
-            <a href="t.me/Uno_bistro_cafe" class="ikonka">
-                <img src="https://w7.pngwing.com/pngs/402/10/png-transparent-telegram-logo-scalable-graphics-icon-logo-blue-angle-triangle.png" alt="">
-                <p>@Uno_bistro_cafe</p>
-            </a>
-            <a href="#" class="ikonka">
-                <img src="https://pngicon.ru/file/uploads/instagram.png" alt="">
-                <p>@Uno_bistro_cafe</p>
-            </a>
-            <a href="#" class="ikonka">
-                <img src="https://cdn-icons-png.flaticon.com/512/145/145802.png" alt="">
-                <p>@Uno_bistro_cafe</p>
-            </a>
-            <a href="" class="ikonka">
-                <img src="https://cdn-icons-png.flaticon.com/512/145/145812.png" alt="">
-                <p>@Uno_bistro_cafe</p>
-            </a>
-        </div>
-    </div>   
+        
 </body>
 </html>

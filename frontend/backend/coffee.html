@@ -24,7 +24,7 @@
             list-style: none; 
             margin: 0; 
             padding: 0; 
-            font-family: Arial, sans-serif; 
+            font-family: Arial, sans-serif;
             font-size: 30px; 
             align-items: center;
             font-weight: bold;
@@ -55,9 +55,9 @@
         li a {
             display: block; 
             text-decoration: none; 
-            color: #666;
+            color: #666; 
             border: 1px solid #F9A13D;
-            background-color: #f5cf9e;
+            background-color: #f5cf9e; 
             border-bottom: none; 
             border-radius: 5px;
             height: 75px;
@@ -68,7 +68,7 @@
             background-color: rgb(52, 12, 12); 
         }
         li:hover ul { 
-            display: block;
+            display: block; 
             width: 200px;
         }
 
@@ -103,6 +103,28 @@
         .navbar_blog{
             height: 530px;
         }
+        .navbar{
+            width: 100%;
+            height: 500px;
+        }
+        .nav{
+            width: 33%;
+            overflow: hidden;
+            margin: 5px;
+            background-color: #F9A13D;
+        }
+        .nav img{
+            width: 100%;
+            transition: 0.5s;
+        }
+        .nav a{
+            color: #fff;
+            text-decoration: none;
+            font-size: 25px;
+        }
+        .nav img:hover{
+            transform: scale(1.1);
+        }
         .blog{
             width: 49%;
             margin: 5px;
@@ -123,33 +145,6 @@
             margin-top: -7px;
             padding-top: 5px;
             font-size: 25px;
-        }
-        .info h1{
-            text-shadow: 7px 5px 10px #F9A13D;
-            font-size: 60px;
-            margin-top: 25px;
-        }
-        .navbar{
-            width: 100%;
-            height: 500px;
-        }
-        .nav{
-            width: 33%;
-            overflow: hidden;
-            margin: 5px;
-            background-color: #F9A13D;
-        }
-        .nav img{
-            width: 100%;
-            transition: 0.5s
-        }
-        .nav a{
-            color: #fff;
-            text-decoration: none;
-            font-size: 25px;
-        }
-        .nav img:hover{
-            transform: scale(1.1);
         }
         .blog img:hover{
             transform: scale(1.2);
@@ -201,7 +196,7 @@
             <img src="https://unobistro.weebly.com/uploads/4/8/3/6/48367591/img-20201205-wa0005-modified.png" alt="">
         </li>
         <li><a href="/">Главная</a></li> 
-        <li><a href="/fast_food/">FAST-FOOD</a>
+        <li><a href="/backend/fast_food/">FAST-FOOD</a>
             <ul> 
                 <li><a href="#" class="item">Lavash</a></li> 
                 <li><a href="#" class="item">Hotdog</a></li> 
@@ -209,7 +204,7 @@
                 <li><a href="#" class="item">Шашлык</a></li> 
             </ul> 
         </li> 
-        <li><a href="/pizza/" class="major">PIZZA</a>
+        <li><a href="/backend/pizza/">PIZZA</a>
             <ul> 
                 <li><a href="#" class="item">Favorite pizza</a></li> 
                 <li><a href="#" class="item">Marinara pizza</a></li> 
@@ -217,7 +212,7 @@
                 <li><a href="#" class="item">Classik pizza</a></li> 
             </ul> 
         </li> 
-        <li><a href="/coffee/">COFFEE</a> 
+        <li><a href="/backend/coffee/" class="major">COFFEE</a> 
             <ul> 
                 <li><a href="#" class="item">Cappuccino</a></li> 
                 <li><a href="#" class="item">Latte</a></li> 
@@ -225,7 +220,7 @@
                 <li><a href="#" class="item">Expresso</a></li> 
             </ul> 
         </li>
-        <li><a href="/drink/">DRINK</a> 
+        <li><a href="/backend/drink/">DRINK</a> 
             <ul> 
                 <li><a href="#" class="item">Pepsi</a></li> 
                 <li><a href="#" class="item">Coca-cola</a></li> 
@@ -233,7 +228,7 @@
                 <li><a href="#" class="item">Fanta</a></li> 
             </ul> 
         </li> 
-        <li><a href="/help/">Помощь</a>
+        <li><a href="/backend/help/">Помощь</a>
             <ul> 
                 <li><a href="#" class="item">Call Center</a></li> 
                 <li><a href="#" class="item">Telegram</a></li> 
@@ -243,7 +238,7 @@
 
             </ul>
         </li> 
-        <li><a href="/order/">Заказ</a> 
+        <li><a href="/backend/order/">Заказ</a> 
             <ul> 
                 <li><a href="#" class="item">Telephone number</a></li> 
             </ul> 
@@ -254,92 +249,52 @@
     </div>
     <div class="navbar_blog">
         <div class="blog">
-            <img src="https://gcdn.tomesto.ru/img/place/000/023/792/restoran-uno-cafe-na-novovestinskoy-ulitse_80bae_full-242249.jpg" alt="">
+            <img src="https://www.afisha.uz/uploads/media/2019/05/0559080.jpeg" alt="">
         </div>
         <div class="blog">
             <img src="https://media-cdn.tripadvisor.com/media/photo-s/0e/ee/ec/56/ta-img-20170411-130450.jpg" alt="">
         </div>
     </div>
     <div class="info">
-        <h1>PIZZA</h1>
+        <h1>COFFEE</h1>
     </div>
     <div class="navbar">
         <div class="nav">
             <a href="#">
-                <h2>Пепперони</h2>
-                <img src="https://s1.eda.ru/StaticContent/Photos/120131085053/171027192707/p_O.jpg" alt="">
+                <h2>Espresso</h2>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Tazzina_di_caff%C3%A8_a_Ventimiglia.jpg" alt="">
             </a>
         </div>
         <div class="nav">
             <a href="#">
-                <h2>Pizza Recipe</h2>
-                <img src="https://www.indianhealthyrecipes.com/wp-content/uploads/2015/10/pizza-recipe-1-500x500.jpg" alt="">
+                <h2>Americano</h2>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/0/09/Hokitika_Cheese_and_Deli%2C_Hokitika_%283526706594%29.jpg" alt="">
             </a>
         </div>
         <div class="nav">
             <a href="#">
-                <h2>Pizza Папа Джонс</h2>
-                <img src="https://dostavka.today/wp-content/uploads/papa-dzhons-1.jpeg" alt="">
-            </a>
-        </div>
-    </div>
-    <div class="navbar">
-        <div class="nav">
-            <a href="#">
-                <h2>Pizza Margherita</h2>
-                <img src="https://www.annarecetasfaciles.com/files/pizza-margarita-1-scaled.jpg" alt="">
-            </a>
-        </div>
-        <div class="nav">
-            <a href="#">
-                <h2>Capricciosa</h2>
-                <img src="https://lookingcooking.ru/vypechka/pitstsa/pitstsa-kaprichoza/pitstsa-kaprichoza-ready0-w398h318w774h464.jpg" alt="">
-            </a>
-        </div>
-        <div class="nav">
-            <a href="#">
-                <h2>Mushroom</h2>
-                <img src="https://food.fnr.sndimg.com/content/dam/images/food/fullset/2013/12/20/0/FNK_Gluten-Free-Mushroom-Ricotta_Pizza_s4x3.jpg.rend.hgtvcom.616.462.suffix/1483737096931.jpeg" alt="">
+                <h2>Doppio</h2>
+                <img src="https://www.doppiocoffeehouse.com/uploads/1/2/7/1/127137217/s818321954983044400_p75_i3_w3600.jpeg?width=2560" alt="">
             </a>
         </div>
     </div>
     <div class="navbar">
         <div class="nav">
             <a href="#">
-                <h2>Marinara</h2>
-                <img src="https://assets.tmecosys.com/image/upload/t_web767x639/img/recipe/ras/Assets/97C2C718-5015-437F-8355-316EE000F57C/Derivates/556409BB-02E0-4BA3-BC16-F409F609FCED.jpg" alt="">
+                <h2>Latte</h2>
+                <img src="https://coffeeaffection.com/wp-content/uploads/2020/01/how-to-make-a-latte-at-home.jpg" alt="">
             </a>
         </div>
         <div class="nav">
             <a href="#">
-                <h2>Seafood</h2>
-                <img src="https://www.bacinos.com/wp-content/uploads/2021/05/30-Seafood-Pizza-Recipes-500x375.jpg" alt="">
+                <h2>Black</h2>
+                <img src="https://www.sharmispassions.com/wp-content/uploads/2021/05/BlackCoffee4-500x500.jpg" alt="">
             </a>
         </div>
         <div class="nav">
             <a href="#">
-                <h2>Hawaiian</h2>
-                <img src="https://napolicartagena.com/wp-content/uploads/2022/01/La-Pizza-Hawaiana-de-Canada.jpg" alt="">
-            </a>
-        </div>
-    </div>
-    <div class="navbar">
-        <div class="nav">
-            <a href="#">
-                <h2>Vegetariana</h2>
-                <img src="https://www.noracooks.com/wp-content/uploads/2020/07/sq.jpg" alt="">
-            </a>
-        </div>
-        <div class="nav">
-            <a href="#">
-                <h2>Mexikan</h2>
-                <img src="https://media-cdn.tripadvisor.com/media/photo-s/05/65/3d/2a/ecco-pizza.jpg" alt="">
-            </a>
-        </div>
-        <div class="nav">
-            <a href="#">
-                <h2>Chikago</h2>
-                <img src="https://assets.tmecosys.com/image/upload/t_web767x639/img/recipe/ras/Assets/02ea0224-7316-406d-bb3d-5ed36e17a7b6/Derivates/85848d56-2911-4221-950f-b071d2d8fedf.jpg" alt="">
+                <h2>Cappuccino</h2>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/c/c8/Cappuccino_at_Sightglass_Coffee.jpg" alt="">
             </a>
         </div>
     </div>
@@ -353,10 +308,10 @@
         </div>
         <div class="side_bar">
             <h3>Наслаждайдесь вместе с нами
-                Ресторан «Uno Cafe» расположен в одном из красивейших пригородов Санкт-Петербурга — в Павловске, около входа в Павловский парк. 
-                Рядом находится исторический павильон «Молочная Ферма» работы архитекторов А.Воронихина и К.Росси.
-                В Uno cafe вы можете отпраздновать свадьбу, юбилей и иное торжественное событие в уютной, домашней атмосфере.
-                В ресторане два зала на 80 и 100 мест, где комфортно разместятся гости и сохранится зона для танцев и работы ведущего.
+                    Ресторан «Uno Cafe» расположен в одном из красивейших пригородов Санкт-Петербурга — в Павловске, около входа в Павловский парк. 
+                    Рядом находится исторический павильон «Молочная Ферма» работы архитекторов А.Воронихина и К.Росси.
+                    В Uno cafe вы можете отпраздновать свадьбу, юбилей и иное торжественное событие в уютной, домашней атмосфере.
+                    В ресторане два зала на 80 и 100 мест, где комфортно разместятся гости и сохранится зона для танцев и работы ведущего.
             </h3>
         </div>
         <div class="side_bar">
@@ -365,8 +320,8 @@
                 <p>+998(9X) xxx-xx-xx</p>
             </a>
             <a href="t.me/Uno_bistro_cafe" class="ikonka">
-            <img src="https://w7.pngwing.com/pngs/402/10/png-transparent-telegram-logo-scalable-graphics-icon-logo-blue-angle-triangle.png" alt="">
-            <p>@Uno_bistro_cafe</p>
+                <img src="https://w7.pngwing.com/pngs/402/10/png-transparent-telegram-logo-scalable-graphics-icon-logo-blue-angle-triangle.png" alt="">
+                <p>@Uno_bistro_cafe</p>
             </a>
             <a href="#" class="ikonka">
                 <img src="https://pngicon.ru/file/uploads/instagram.png" alt="">
@@ -376,9 +331,11 @@
                 <img src="https://cdn-icons-png.flaticon.com/512/145/145802.png" alt="">
                 <p>@Uno_bistro_cafe</p>
             </a>
-            <a href="" class="ikonka">                    <img src="https://cdn-icons-png.flaticon.com/512/145/145812.png" alt="">                    <p>@Uno_bistro_cafe</p>
+            <a href="" class="ikonka">
+                <img src="https://cdn-icons-png.flaticon.com/512/145/145812.png" alt="">
+                <p>@Uno_bistro_cafe</p>
             </a>
         </div>
-    </div>
+    </div>   
 </body>
 </html>

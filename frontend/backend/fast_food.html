@@ -20,12 +20,12 @@
             width: 10%;
         }
         ul {
-            width: 180px;
-            list-style: none;
-            margin: 0;
-            padding: 0;
-            font-family: Arial, sans-serif;
-            font-size: 30px;
+            width: 180px; 
+            list-style: none; 
+            margin: 0; 
+            padding: 0; 
+            font-family: Arial, sans-serif; 
+            font-size: 30px; 
             align-items: center;
             font-weight: bold;
         }
@@ -39,15 +39,15 @@
         }
         li {
             width: 12.7%;
-            border-bottom: 1px solid #F9A13D;
+            border-bottom: 1px solid #F9A13D; 
             text-align: center;
             align-items: center;
         }
         li ul {
-            position: absolute;
-            display: none;
-            margin-left: 50px;
-            margin-top: -10px;
+            position: absolute; 
+            display: none; 
+            margin-left: 50px; 
+            margin-top: -10px; 
         }       
         .item{
             width: 200px;
@@ -57,14 +57,14 @@
             text-decoration: none; 
             color: #666;
             border: 1px solid #F9A13D;
-            background-color: #f5cf9e;
-            border-bottom: none; 
+            background-color: #f5cf9e; 
+            border-bottom: none;
             border-radius: 5px;
             height: 75px;
             padding-top: 35px;
         }
         li a:hover {
-            color: #ffe;
+            color: #ffe; 
             background-color: rgb(52, 12, 12); 
         }
         li:hover ul { 
@@ -88,9 +88,6 @@
             margin: 0;
             padding-top: 5px;
         }
-        .navbar{
-            height: 480px;
-        }
         .navbar, .navbar_blog{
             width: 100%;
             display: flex;
@@ -99,26 +96,6 @@
             background-size: cover;
             text-align: center;
             margin: 0;
-        }
-        .nav{
-            width: 25%;
-            background-color: rgb(52, 12, 12);
-            margin: 10px;
-            align-items: center;
-            overflow: hidden;
-        }
-        .nav a{
-            text-decoration: none;
-            color: #fff;
-            font-size: 30px;
-        }
-        .nav img{
-            width: 100%;
-            height: 330px;
-            transition: 0.5s;
-        }
-        .nav img:hover{
-            transform: scale(1.2);
         }
         .navbar_blog{
             height: 530px;
@@ -141,11 +118,38 @@
             width: 100%;
             height: 130px;
             margin-top: -7px;
-            padding-top: 5px;
+            padding-top: 1px;
             font-size: 25px;
+        }
+        .info h1{
+            text-shadow: 7px 5px 10px #F9A13D;
+            font-size: 60px;
+            margin-top: 25px;
         }
         .blog img:hover{
             transform: scale(1.2);
+        }
+        .navbar{
+            width: 100%;
+            height: 500px;
+        }
+        .nav{
+            width: 33%;
+            overflow: hidden;
+            margin: 5px;
+            background-color: #F9A13D;
+        }
+        .nav img{
+            width: 100%;
+            transition: 0.5s
+        }
+        .nav a{
+            color: #fff;
+            text-decoration: none;
+            font-size: 25px;
+        }
+        .nav img:hover{
+            transform: scale(1.1);
         }
        .end{
             width: 100%;
@@ -193,16 +197,17 @@
         <li class="img">
             <img src="https://unobistro.weebly.com/uploads/4/8/3/6/48367591/img-20201205-wa0005-modified.png" alt="">
         </li>
-        <li><a href="/" class="major">Главная</a></li> 
-        <li><a href="fast_food/">FAST-FOOD</a>
+        <li><a href="/">Главная</a></li> 
+        <li><a href="/backend/fast_food/" class="major">FAST-FOOD</a>
             <ul> 
                 <li><a href="#" class="item">Lavash</a></li> 
                 <li><a href="#" class="item">Hotdog</a></li> 
-                <li><a href="#" class="item">Pita</a></li> 
-                <li><a href="#" class="item">Шашлык</a></li> 
+                <li><a href="#" class="item">Sendwich</a></li> 
+                <li><a href="#" class="item">Hamburger</a></li>
+                <li><a href="#" class="item">Другие</a></li>
             </ul> 
         </li> 
-        <li><a href="pizza/" class="brd">PIZZA</a>
+        <li><a href="/backend/pizza/">PIZZA</a>
             <ul> 
                 <li><a href="#" class="item">Favorite pizza</a></li> 
                 <li><a href="#" class="item">Marinara pizza</a></li> 
@@ -210,7 +215,7 @@
                 <li><a href="#" class="item">Classik pizza</a></li> 
             </ul> 
         </li> 
-        <li><a href="coffee/">COFFEE</a> 
+        <li><a href="/backend/coffee/">COFFEE</a> 
             <ul> 
                 <li><a href="#" class="item">Cappuccino</a></li> 
                 <li><a href="#" class="item">Latte</a></li> 
@@ -218,7 +223,7 @@
                 <li><a href="#" class="item">Expresso</a></li> 
             </ul> 
         </li>
-        <li><a href="drink/">DRINK</a> 
+        <li><a href="/backend/drink/">DRINK</a> 
             <ul> 
                 <li><a href="#" class="item">Pepsi</a></li> 
                 <li><a href="#" class="item">Coca-cola</a></li> 
@@ -226,7 +231,7 @@
                 <li><a href="#" class="item">Fanta</a></li> 
             </ul> 
         </li> 
-        <li><a href="help/">Помощь</a>
+        <li><a href="/backend/help/">Помощь</a>
             <ul> 
                 <li><a href="#" class="item">Call Center</a></li> 
                 <li><a href="#" class="item">Telegram</a></li> 
@@ -236,43 +241,14 @@
 
             </ul>
         </li> 
-        <li><a href="order/">Заказ</a> 
+        <li><a href="/backend/order/">Заказ</a> 
             <ul> 
                 <li><a href="#" class="item">Telephone number</a></li> 
             </ul> 
         </li>
-       </ul>
-       <div class="container">
+    </ul>
+        <div class="container">
             <h1>UNO CAFE BISTRO</h1>
-       </div>
-        <div class="navbar">
-            <div class="nav">
-                <a href="/fast_food/">
-                    <h2>FAST FOOD</h2>
-                    <img src="https://excellentglobal.com.br/wp-content/uploads/2018/11/bloggif_5bfc3ae6945b8.jpeg" alt="">
-                </a>
-            </div>
-            <div class="nav">
-                <a href="/pizza/">
-                    <h2>PIZZA</h2>
-                    <img src="https://s1.eda.ru/StaticContent/Photos/120131085053/171027192707/p_O.jpg" alt="">
-                </a>
-            </div>
-            <div class="nav">
-                <a href="/coffee/">
-                    <h2>COFFEE</h2>
-                    <img src="https://www.coffeeaddress.com/file/manual/CA_Home_Coffee_in_cafe@2x.png" alt="">
-                </a>
-            </div>
-            <div class="nav">
-                <a href="/drink">
-                    <h2>DRINK</h2>
-                    <img src="https://thebigmansworld.com/wp-content/uploads/2021/07/keto-drink-mix4-500x500.jpeg" alt="">
-                </a>
-            </div>
-        </div>
-        <div class="info">
-            <h1>ФОТО UNO CAFE BISTRO</h1>
         </div>
         <div class="navbar_blog">
             <div class="blog">
@@ -282,20 +258,67 @@
                 <img src="https://www.afisha.uz/uploads/media/2019/05/0559080.jpeg" alt="">
             </div>
         </div>
-        <div class="navbar_blog">
-            <div class="blog">
-                <img src="https://gcdn.tomesto.ru/img/place/000/023/792/restoran-uno-cafe-na-novovestinskoy-ulitse_80bae_full-242249.jpg" alt="">
+        <div class="info">
+            <h1>FAST FOOD</h1>
+        </div>
+        <div class="navbar">
+            <div class="nav">
+                <a href="#">
+                    <h2>Lavash</h2>
+                    <img src="https://thumbs.dreamstime.com/b/shawarma-lavash-%D1%81-%D1%80%D0%B8%D1%81%D0%BE%D0%BC-%D0%B8-%D0%BE%D0%B2%D0%BE%D1%89%D0%B0%D0%BC%D0%B8-74294012.jpg" alt="">
+                </a>
             </div>
-            <div class="blog">
-                <img src="https://media-cdn.tripadvisor.com/media/photo-s/0e/ee/ec/56/ta-img-20170411-130450.jpg" alt="">
+            <div class="nav">
+                <a href="#">
+                    <h2>Hot-Dog</h2>
+                    <img src="https://images.hola.com/imagenes/cocina/noticiaslibros/20200424166483/dia-mundial-perrito-caliente-hot-dog/0-815-493/hotdogs-m.jpg" alt="">
+                </a>
+            </div>
+            <div class="nav">
+                <a href="#">
+                    <h2>Sandwich</h2>
+                    <img src="https://cdn7.kiwilimon.com/recetaimagen/38989/50344.jpg" alt="">
+                </a>
             </div>
         </div>
-        <div class="navbar_blog">
-            <div class="blog">
-                <img src="https://www.afisha.uz/uploads/media/2019/05/0408215.jpeg" alt="">
+        <div class="navbar">
+            <div class="nav">
+                <a href="#">
+                    <h2>Hamburger</h2>
+                    <img src="https://www.thespruceeats.com/thmb/ed2I1ndnNKkZ4khwdC351qvLtSM=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/slow-cooker-hamburgers-recipe-for-kids-2098104-hero-01-3dd9bf2b2ca748358047f2ff4e73b64c.jpg" alt="">
+                </a>
             </div>
-            <div class="blog">
-                <img src="https://broportal.net.ua/media/djcatalog2/images/item/1/uno-pizza-grill_f.jpg" alt="">
+            <div class="nav">
+                <a href="#">
+                    <h2>Chisburger</h2>
+                    <img src="https://www.foodandwine.com/thmb/DI29Houjc_ccAtFKly0BbVsusHc=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/crispy-comte-cheesburgers-FT-RECIPE0921-6166c6552b7148e8a8561f7765ddf20b.jpg" alt="">
+                </a>
+            </div>
+            <div class="nav">
+                <a href="#">
+                    <h2>Pancakes</h2>
+                    <img src="https://static.onecms.io/wp-content/uploads/sites/43/2022/02/16/21014-Good-old-Fashioned-Pancakes-mfs_001.jpg" alt="">
+                </a>
+            </div>
+        </div>
+        <div class="navbar">
+            <div class="nav">
+                <a href="#">
+                    <h2>Noodles</h2>
+                    <img src="https://avegtastefromatoz.com/wp-content/uploads/2022/01/Noodle-steps-FI.jpg" alt="">
+                </a>
+            </div>
+            <div class="nav">
+                <a href="#">
+                    <h2>Tried chicken</h2>
+                    <img src="https://tmbidigitalassetsazure.blob.core.windows.net/rms3-prod/attachments/37/1200x1200/Crispy-Fried-Chicken_EXPS_TOHJJ22_6445_DR%20_02_03_11b.jpg" alt="">
+                </a>
+            </div>
+            <div class="nav">
+                <a href="#">
+                    <h2>Free</h2>
+                    <img src="https://static.1000.menu/img/content-v2/29/44/11998/kartofel-fri-v-duxovke_1620886770_10_max.jpg" alt="">
+                </a>
             </div>
         </div>
         <div class="end">
@@ -337,6 +360,5 @@
                 </a>
             </div>
         </div>
-        
 </body>
 </html>
