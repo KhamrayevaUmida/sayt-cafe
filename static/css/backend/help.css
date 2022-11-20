@@ -1,0 +1,165 @@
+body {
+    margin: 0;
+}
+.menu{
+    display: flex;
+    width: 100%;
+    background-color: #F9A13D;
+    padding-right: 20px;
+}
+.img{
+    width: 10%;
+}
+ul {
+    width: 180px; 
+    list-style: none; 
+    margin: 0; 
+    padding: 0; 
+    font-family: Arial, sans-serif; 
+    font-size: 30px;
+    align-items: center;
+    font-weight: bold;
+}
+ul img{
+    width: 100px;
+    margin-top: 10px;
+}
+.major{
+    background-color: #F9A13D; 
+    color: #ffe;
+}
+li {
+    width: 12.7%;
+    border-bottom: 1px solid #F9A13D; 
+    text-align: center;
+    align-items: center;
+}
+li ul {
+    position: absolute; 
+    display: none; 
+    margin-left: 50px; 
+    margin-top: -10px; 
+}       
+.item{
+    width: 200px;
+}
+li a {
+    display: block; 
+    text-decoration: none; 
+    color: #666;
+    border: 1px solid #F9A13D;
+    background-color: #f5cf9e; 
+    border-bottom: none; 
+    border-radius: 5px;
+    height: 75px;
+    padding-top: 35px;
+}
+li a:hover {
+    color: #ffe; 
+    background-color: rgb(52, 12, 12); 
+}
+li:hover ul { 
+    display: block; 
+    width: 200px;
+}
+
+.container{
+    background-image: url(https://kartinkin.net/pics/uploads/posts/2022-08/1659766649_1-kartinkin-net-p-fon-kafe-krasivo-1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 150px;
+    text-align: center;
+    align-items: center;
+    color: #fff;
+    font-size: 35px;
+    font-family:'Times New Roman', Times, serif;
+    text-shadow: 10px 5px 5px #F9A13D;
+    font-weight: bold;
+    margin: 0;
+    padding-top: 5px;
+}
+.navbar{
+    height: 200px;
+}
+.navbar, .navbar_blog{
+    width: 100%;
+    display: flex;
+    background-image: url(https://kartinkin.net/uploads/posts/2021-07/1627171305_12-kartinkin-com-p-bar-razmitii-fon-krasivo-13.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    margin: 0;
+}
+.uno{
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    margin: 10px;
+}
+.navbar_blog{
+    height: 530px;
+}
+.blog{
+    width: 49%;
+    margin: 5px;
+    overflow: hidden;
+    height: 520px;
+}
+.blog img{
+    width: 100%;
+    transition: 0.5s;
+}
+.info{
+    font-weight: bold;
+    text-align: center;
+    background-color: rgb(52, 12, 12);
+    color: #fff;
+    width: 100%;
+    height: 130px;
+    margin-top: -7px;
+    padding-top: 5px;
+    font-size: 25px;
+}
+.blog img:hover{
+    transform: scale(1.2);
+}
+.end{
+    width: 100%;
+    height: 430px;
+    background-color: rgb(52, 12, 12);
+    display: flex;
+    text-align: center;
+    color: #fff;
+}
+.side_bar{
+    width: 24%;
+    white-space: pre-line;
+}
+.side_bar img{
+    width: 80%;
+}
+.side_bar h2{
+    color: #fff;
+    font-size: 60px;
+    padding-top: 50px; 
+}
+.side_bar h3{
+    font-size: 23px;
+}
+.ikonka{
+    width: 100%;
+    display: flex;
+    margin-left: 100px;
+}
+.ikonka img{
+    width: 60px;
+    margin-right: 10px;
+}
+.side_bar a{
+    color: #fff;
+    text-decoration: none;
+}
+.ikonka p{
+    font-size: 20px;
+}
